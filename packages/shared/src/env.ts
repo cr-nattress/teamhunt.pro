@@ -4,7 +4,13 @@ import { z } from 'zod';
 export const serverEnvSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   PORT: z.string().default('3000'),
+  // Supabase Configuration
+  SUPABASE_URL: z.string().optional(),
+  SUPABASE_ANON_KEY: z.string().optional(),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),
+  // Legacy database support (for migration/compatibility)
   DATABASE_URL: z.string().optional(),
+  // Other services
   JWT_SECRET: z.string().optional(),
   EMAIL_API_KEY: z.string().optional(),
   MEDIA_BUCKET: z.string().optional(),
@@ -14,6 +20,9 @@ export const serverEnvSchema = z.object({
 export const clientEnvSchema = z.object({
   NEXT_PUBLIC_API_URL: z.string().default('http://localhost:3000'),
   NEXT_PUBLIC_APP_NAME: z.string().default('TeamHunt'),
+  // Supabase Client Configuration
+  NEXT_PUBLIC_SUPABASE_URL: z.string().optional(),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().optional(),
 });
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>;

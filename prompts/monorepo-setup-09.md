@@ -9,6 +9,17 @@ LANDING_BASE_URL=http://localhost:3000
 API_BASE_URL=http://localhost:8888
 EMAIL_BASE_URL=http://localhost:8889
 MEDIA_BASE_URL=http://localhost:8890
+
+# Supabase Configuration
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
+# Legacy Database Support
+DATABASE_URL=postgresql://user:password@host:port/database
+
 ALGOLIA_APP_ID=
 ALGOLIA_SEARCH_KEY=
 ALGOLIA_INDEX=
