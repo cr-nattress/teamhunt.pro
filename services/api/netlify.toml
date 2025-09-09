@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["express", "serverless-http", "zod", "@supabase/supabase-js"]
+
+[[redirects]]
+  from = "/v1/*"
+  to = "/.netlify/functions/http"
+  status = 200
