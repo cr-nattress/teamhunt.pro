@@ -3,6 +3,9 @@
   publish = "dist"
   functions = "netlify/functions"
 
+[dev]
+  staticServerPort = 4001
+
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express", "serverless-http", "zod", "@supabase/supabase-js"]

@@ -10,7 +10,21 @@
       "Bash(tree:*)",
       "Bash(dir:*)",
       "Bash(npx tsc:*)",
-      "Bash(node_modules/.bin/tsc:*)"
+      "Bash(node_modules/.bin/tsc:*)",
+      "Bash(npm install)",
+      "Bash(pnpm dev:api:*)",
+      "Bash(pnpm dev:email:*)",
+      "Bash(pnpm dev:media:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm dev:landing:*)",
+      "Bash(pnpm dev:organizer:*)",
+      "Bash(curl:*)",
+      "Bash(pnpm --filter @teamhunt/api build)",
+      "Bash(pnpm --filter @teamhunt/media build)",
+      "Bash(pnpm --filter @teamhunt/shared build)",
+      "WebSearch",
+      "Bash(netlify:*)",
+      "Bash(pnpm dev:*)"
     ],
     "deny": [],
     "ask": []
