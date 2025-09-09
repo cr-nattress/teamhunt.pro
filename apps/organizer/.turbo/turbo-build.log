@@ -1,0 +1,87 @@
+
+> @teamhunt/organizer@0.1.0 build C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer
+> next build
+
+  ▲ Next.js 14.2.32
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+ ⚠ Failed to copy traced files for C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\server\pages\_app.js Error: EPERM: operation not permitted, symlink 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\react@18.3.1\node_modules\react' -> 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\standalone\apps\organizer\node_modules\react'
+    at async Object.symlink (node:internal/fs/promises:1008:10)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1402:25
+    at async Promise.all (index 9)
+    at async handleTraceFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1390:9)
+    at async copyTracedFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1451:9)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:224:9
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async writeStandaloneDirectory (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:223:5)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:2143:17
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'symlink',
+  path: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\node_modules\\.pnpm\\react@18.3.1\\node_modules\\react',
+  dest: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\apps\\organizer\\.next\\standalone\\apps\\organizer\\node_modules\\react'
+}
+ ⚠ Failed to copy traced files for C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\server\pages\_error.js Error: EPERM: operation not permitted, symlink 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\react-dom@18.3.1_react@18.3.1\node_modules\react-dom' -> 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\standalone\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\react-dom'
+    at async Object.symlink (node:internal/fs/promises:1008:10)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1402:25
+    at async Promise.all (index 14)
+    at async handleTraceFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1390:9)
+    at async copyTracedFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1451:9)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:224:9
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async writeStandaloneDirectory (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:223:5)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:2143:17
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'symlink',
+  path: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\node_modules\\.pnpm\\react-dom@18.3.1_react@18.3.1\\node_modules\\react-dom',
+  dest: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\apps\\organizer\\.next\\standalone\\node_modules\\.pnpm\\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\react-dom'
+}
+ ⚠ Failed to copy traced files for C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\server\pages\_document.js Error: EPERM: operation not permitted, symlink 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next' -> 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\standalone\apps\organizer\node_modules\next'
+    at async Object.symlink (node:internal/fs/promises:1008:10)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1402:25
+    at async Promise.all (index 37)
+    at async handleTraceFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1390:9)
+    at async copyTracedFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1451:9)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:224:9
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async writeStandaloneDirectory (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:223:5)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:2143:17
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'symlink',
+  path: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\node_modules\\.pnpm\\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next',
+  dest: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\apps\\organizer\\.next\\standalone\\apps\\organizer\\node_modules\\next'
+}
+
+> Build error occurred
+Error: EPERM: operation not permitted, symlink 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\@next+env@14.2.32\node_modules\@next\env' -> 'C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\apps\organizer\.next\standalone\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\@next\env'
+    at async Object.symlink (node:internal/fs/promises:1008:10)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1402:25
+    at async Promise.all (index 86)
+    at async handleTraceFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1390:9)
+    at async copyTracedFiles (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js:1472:5)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:224:9
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async writeStandaloneDirectory (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:223:5)
+    at async C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\index.js:2143:17
+    at async Span.traceAsyncFn (C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\node_modules\.pnpm\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'symlink',
+  path: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\node_modules\\.pnpm\\@next+env@14.2.32\\node_modules\\@next\\env',
+  dest: 'C:\\Users\\BLUE\\Documents\\windsurf\\teamhunt-monorepo\\apps\\organizer\\.next\\standalone\\node_modules\\.pnpm\\next@14.2.32_@babel+core@7.28.4_@playwright+test@1.55.0_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\@next\\env'
+}

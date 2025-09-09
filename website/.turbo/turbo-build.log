@@ -1,0 +1,11 @@
+
+> @teamhunt/website@1.0.0 build C:\Users\BLUE\Documents\windsurf\teamhunt-monorepo\website
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled successfully in 1.27s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled successfully in 1.46s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
