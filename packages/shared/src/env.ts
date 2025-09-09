@@ -8,8 +8,8 @@ export const serverEnvSchema = z.object({
   SUPABASE_URL: z.string().default('https://hactsrhxcrujegduuqnn.supabase.co'),
   SUPABASE_ANON_KEY: z.string().default('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhY3Rzcmh4Y3J1amVnZHV1cW5uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0NDYwOTEsImV4cCI6MjA3MzAyMjA5MX0.rSxg1kTAo7roEExzos8EWX66U7llCoKJzIyr6SCN4Oc'),
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),
-  // Legacy database support (for migration/compatibility)
-  DATABASE_URL: z.string().optional(),
+  // PostgreSQL Database (Supabase)
+  DATABASE_URL: z.string().default('postgresql://postgres:Progressive!12@db.hactsrhxcrujegduuqnn.supabase.co:5432/postgres'),
   // Other services
   JWT_SECRET: z.string().optional(),
   EMAIL_API_KEY: z.string().optional(),
