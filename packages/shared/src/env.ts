@@ -5,8 +5,8 @@ export const serverEnvSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   PORT: z.string().default('3000'),
   // Supabase Configuration
-  SUPABASE_URL: z.string().optional(),
-  SUPABASE_ANON_KEY: z.string().optional(),
+  SUPABASE_URL: z.string().default('https://hactsrhxcrujegduuqnn.supabase.co'),
+  SUPABASE_ANON_KEY: z.string().default('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhY3Rzcmh4Y3J1amVnZHV1cW5uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0NDYwOTEsImV4cCI6MjA3MzAyMjA5MX0.rSxg1kTAo7roEExzos8EWX66U7llCoKJzIyr6SCN4Oc'),
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),
   // Legacy database support (for migration/compatibility)
   DATABASE_URL: z.string().optional(),
@@ -21,8 +21,8 @@ export const clientEnvSchema = z.object({
   NEXT_PUBLIC_API_URL: z.string().default('http://localhost:3000'),
   NEXT_PUBLIC_APP_NAME: z.string().default('TeamHunt'),
   // Supabase Client Configuration
-  NEXT_PUBLIC_SUPABASE_URL: z.string().optional(),
-  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().optional(),
+  NEXT_PUBLIC_SUPABASE_URL: z.string().default('https://hactsrhxcrujegduuqnn.supabase.co'),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().default('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhY3Rzcmh4Y3J1amVnZHV1cW5uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0NDYwOTEsImV4cCI6MjA3MzAyMjA5MX0.rSxg1kTAo7roEExzos8EWX66U7llCoKJzIyr6SCN4Oc'),
 });
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>;
