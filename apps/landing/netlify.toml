@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install && pnpm run build"
+  command = "pnpm -F @teamhunt/landing build"
   publish = ".next"
 
 [[plugins]]
@@ -8,6 +8,7 @@
 [build.environment]
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
+  NETLIFY_USE_PNPM = "true"
 
 # Headers for security and performance
 [[headers]]
