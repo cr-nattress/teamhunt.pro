@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+build
+.storybook-out
+storybook-static
+website/build
+.netlify
+.vercel
+.env
+.env.*
+.DS_Store
