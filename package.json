@@ -2,6 +2,13 @@
   "name": "teamhunt-monorepo",
   "private": true,
   "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*",
+    "website",
+    "tests/*"
+  ],
   "scripts": {
     "dev:landing": "pnpm --filter @teamhunt/landing dev",
     "dev:organizer": "pnpm --filter @teamhunt/organizer dev",

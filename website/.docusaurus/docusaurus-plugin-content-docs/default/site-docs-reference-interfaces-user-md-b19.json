@@ -1,0 +1,14 @@
+{
+  "id": "reference/interfaces/User",
+  "title": "User",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/interfaces/User.md",
+  "sourceDirName": "reference/interfaces",
+  "slug": "/reference/interfaces/User",
+  "permalink": "/reference/interfaces/User",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

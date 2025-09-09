@@ -1,0 +1,14 @@
+{
+  "id": "index",
+  "title": "TeamHunt Documentation",
+  "description": "Welcome to the TeamHunt documentation! This site contains comprehensive guides, API references, and architectural decisions for the TeamHunt platform.",
+  "source": "@site/../docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -302,6 +302,31 @@ importers:
         specifier: ^5.6.2
         version: 5.9.2
 
+  website:
+    dependencies:
+      '@docusaurus/core':
+        specifier: ^3.5.2
+        version: 3.8.1(@mdx-js/react@3.1.1(@types/react@18.3.24)(react@18.3.1))(esbuild@0.19.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2)
+      '@docusaurus/plugin-content-docs':
+        specifier: ^3.5.2
+        version: 3.8.1(@mdx-js/react@3.1.1(@types/react@18.3.24)(react@18.3.1))(esbuild@0.19.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2)
+      '@docusaurus/preset-classic':
+        specifier: ^3.5.2
+        version: 3.8.1(@algolia/client-search@5.37.0)(@mdx-js/react@3.1.1(@types/react@18.3.24)(react@18.3.1))(@types/react@18.3.24)(esbuild@0.19.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.9.2)
+      '@mdx-js/react':
+        specifier: ^3.0.0
+        version: 3.1.1(@types/react@18.3.24)(react@18.3.1)
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@docusaurus/types':
+        specifier: ^3.5.2
+        version: 3.8.1(esbuild@0.19.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
 packages:
 
   '@adobe/css-tools@4.4.4':

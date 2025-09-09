@@ -1,0 +1,14 @@
+{
+  "id": "reference/type-aliases/ClientEnv",
+  "title": "ClientEnv",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/type-aliases/ClientEnv.md",
+  "sourceDirName": "reference/type-aliases",
+  "slug": "/reference/type-aliases/ClientEnv",
+  "permalink": "/reference/type-aliases/ClientEnv",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

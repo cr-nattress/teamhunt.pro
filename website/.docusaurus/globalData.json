@@ -1,0 +1,112 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "adr/docs-stack",
+              "path": "/adr/docs-stack",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/contributing",
+              "path": "/guides/contributing",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/getting-started",
+              "path": "/guides/getting-started",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/lessons-learned",
+              "path": "/guides/lessons-learned",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/project-structure",
+              "path": "/guides/project-structure",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/security",
+              "path": "/guides/security",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "guides/state-management",
+              "path": "/guides/state-management",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/"
+            },
+            {
+              "id": "reference/functions/validateClientEnv",
+              "path": "/reference/functions/validateClientEnv"
+            },
+            {
+              "id": "reference/functions/validateServerEnv",
+              "path": "/reference/functions/validateServerEnv"
+            },
+            {
+              "id": "reference/interfaces/ApiResponse",
+              "path": "/reference/interfaces/ApiResponse"
+            },
+            {
+              "id": "reference/interfaces/Hunt",
+              "path": "/reference/interfaces/Hunt"
+            },
+            {
+              "id": "reference/interfaces/Team",
+              "path": "/reference/interfaces/Team"
+            },
+            {
+              "id": "reference/interfaces/User",
+              "path": "/reference/interfaces/User"
+            },
+            {
+              "id": "reference/README",
+              "path": "/reference/",
+              "sidebar": "guideSidebar"
+            },
+            {
+              "id": "reference/type-aliases/ClientEnv",
+              "path": "/reference/type-aliases/ClientEnv"
+            },
+            {
+              "id": "reference/type-aliases/ServerEnv",
+              "path": "/reference/type-aliases/ServerEnv"
+            },
+            {
+              "id": "reference/variables/clientEnvSchema",
+              "path": "/reference/variables/clientEnvSchema"
+            },
+            {
+              "id": "reference/variables/serverEnvSchema",
+              "path": "/reference/variables/serverEnvSchema"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "guideSidebar": {
+              "link": {
+                "path": "/guides/getting-started",
+                "label": "guides/getting-started"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

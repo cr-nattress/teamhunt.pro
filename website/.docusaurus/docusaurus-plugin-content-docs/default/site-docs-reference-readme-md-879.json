@@ -1,0 +1,23 @@
+{
+  "id": "reference/README",
+  "title": "README",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/README.md",
+  "sourceDirName": "reference",
+  "slug": "/reference/",
+  "permalink": "/reference/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "previous": {
+    "title": "Lessons Learned",
+    "permalink": "/guides/lessons-learned"
+  },
+  "next": {
+    "title": "ADR-0001: Documentation Stack",
+    "permalink": "/adr/docs-stack"
+  }
+}

@@ -1,0 +1,98 @@
+# Contributing Guide
+
+Thank you for your interest in contributing to TeamHunt! This guide outlines the process for contributing to the project.
+
+## Development Workflow
+
+1. **Fork and Clone**: Fork the repository and clone your fork locally
+2. **Branch**: Create a feature branch from `master`
+3. **Develop**: Make your changes following our coding standards
+4. **Test**: Ensure all tests pass and add new tests as needed
+5. **Commit**: Use conventional commit messages
+6. **Pull Request**: Open a PR with a clear description
+
+## Coding Standards
+
+### TypeScript
+- Use strict TypeScript configuration
+- Prefer explicit types over `any`
+- Use interfaces for object shapes
+- Follow naming conventions: PascalCase for types, camelCase for variables
+
+### Code Style
+- Use Prettier for formatting (configured in project)
+- Use ESLint for code quality (configured in project)
+- Follow functional programming patterns where possible
+- Prefer composition over inheritance
+
+### Commit Messages
+
+Follow [Conventional Commits](https://conventionalcommits.org/):
+
+```
+feat: add user authentication system
+fix: resolve database connection timeout
+docs: update API documentation
+test: add unit tests for user service
+refactor: simplify error handling logic
+```
+
+### Pull Request Guidelines
+
+- Keep PRs focused and atomic
+- Write clear PR descriptions explaining the change
+- Link related issues
+- Ensure CI checks pass
+- Request reviews from appropriate team members
+
+## Testing
+
+### Running Tests
+
+```bash
+# Run all tests
+pnpm test
+
+# Run specific test suites
+pnpm test:ui      # UI end-to-end tests
+pnpm test:api     # API end-to-end tests
+pnpm test:unit    # Unit tests
+```
+
+### Writing Tests
+
+- Write tests for new features and bug fixes
+- Follow existing test patterns
+- Use meaningful test descriptions
+- Test both happy paths and edge cases
+
+## Code Quality
+
+The project uses several tools to maintain code quality:
+
+- **TypeScript**: Static type checking
+- **ESLint**: Code linting and best practices
+- **Prettier**: Code formatting
+- **Husky**: Git hooks for pre-commit checks
+- **lint-staged**: Run linters on staged files only
+
+## Project Architecture
+
+Before contributing, familiarize yourself with:
+
+- [Project Structure](./project-structure) - Monorepo organization
+- [State Management](./state-management) - Data flow patterns
+- [Security Guidelines](./security) - Security best practices
+
+## Getting Help
+
+- Check existing issues and discussions
+- Join our community chat
+- Reach out to maintainers for architectural questions
+
+## Recognition
+
+Contributors are recognized in:
+- Repository contributors list
+- Release notes for significant contributions
+- Project documentation acknowledgments

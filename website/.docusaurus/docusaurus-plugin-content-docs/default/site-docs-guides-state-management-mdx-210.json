@@ -1,0 +1,23 @@
+{
+  "id": "guides/state-management",
+  "title": "State Management",
+  "description": "TeamHunt uses a combination of state management approaches optimized for different layers of the application.",
+  "source": "@site/../docs/guides/state-management.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/state-management",
+  "permalink": "/guides/state-management",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "previous": {
+    "title": "Contributing Guide",
+    "permalink": "/guides/contributing"
+  },
+  "next": {
+    "title": "Security Guidelines",
+    "permalink": "/guides/security"
+  }
+}

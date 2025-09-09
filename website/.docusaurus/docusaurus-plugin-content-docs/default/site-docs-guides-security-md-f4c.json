@@ -1,0 +1,23 @@
+{
+  "id": "guides/security",
+  "title": "Security Guidelines",
+  "description": "Security is a critical aspect of the TeamHunt platform. This guide outlines security best practices and requirements for development.",
+  "source": "@site/../docs/guides/security.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/security",
+  "permalink": "/guides/security",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "previous": {
+    "title": "State Management",
+    "permalink": "/guides/state-management"
+  },
+  "next": {
+    "title": "Lessons Learned",
+    "permalink": "/guides/lessons-learned"
+  }
+}

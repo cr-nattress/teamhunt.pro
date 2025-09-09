@@ -1,0 +1,40 @@
+{
+  "entryPoints": [
+    "packages/shared/src/index.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "tsconfig": "packages/shared/tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "out": "docs/reference",
+  "readme": "none",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "hideGenerator": true,
+  "sort": ["source-order"],
+  "kindSortOrder": [
+    "Project",
+    "Module",
+    "Namespace", 
+    "Enum",
+    "EnumMember",
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Variable",
+    "Function",
+    "Accessor",
+    "Method"
+  ],
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Types",
+    "Utilities", 
+    "Constants",
+    "*",
+    "Other"
+  ]
+}

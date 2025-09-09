@@ -1,0 +1,14 @@
+{
+  "id": "reference/interfaces/Team",
+  "title": "Team",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/interfaces/Team.md",
+  "sourceDirName": "reference/interfaces",
+  "slug": "/reference/interfaces/Team",
+  "permalink": "/reference/interfaces/Team",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

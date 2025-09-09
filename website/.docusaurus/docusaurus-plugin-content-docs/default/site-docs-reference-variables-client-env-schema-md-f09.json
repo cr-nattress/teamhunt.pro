@@ -1,0 +1,14 @@
+{
+  "id": "reference/variables/clientEnvSchema",
+  "title": "clientEnvSchema",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/variables/clientEnvSchema.md",
+  "sourceDirName": "reference/variables",
+  "slug": "/reference/variables/clientEnvSchema",
+  "permalink": "/reference/variables/clientEnvSchema",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

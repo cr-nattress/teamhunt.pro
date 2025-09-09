@@ -1,0 +1,14 @@
+{
+  "id": "reference/variables/serverEnvSchema",
+  "title": "serverEnvSchema",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/variables/serverEnvSchema.md",
+  "sourceDirName": "reference/variables",
+  "slug": "/reference/variables/serverEnvSchema",
+  "permalink": "/reference/variables/serverEnvSchema",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "guides/getting-started",
+  "title": "Getting Started",
+  "description": "Welcome to TeamHunt! This guide will help you get up and running with the TeamHunt platform development environment.",
+  "source": "@site/../docs/guides/getting-started.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/getting-started",
+  "permalink": "/guides/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "next": {
+    "title": "Project Structure",
+    "permalink": "/guides/project-structure"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "reference/functions/validateServerEnv",
+  "title": "validateServerEnv",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/functions/validateServerEnv.md",
+  "sourceDirName": "reference/functions",
+  "slug": "/reference/functions/validateServerEnv",
+  "permalink": "/reference/functions/validateServerEnv",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

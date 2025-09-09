@@ -1,0 +1,14 @@
+{
+  "id": "reference/interfaces/ApiResponse",
+  "title": "ApiResponse",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/interfaces/ApiResponse.md",
+  "sourceDirName": "reference/interfaces",
+  "slug": "/reference/interfaces/ApiResponse",
+  "permalink": "/reference/interfaces/ApiResponse",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

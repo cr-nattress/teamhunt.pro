@@ -1,0 +1,14 @@
+{
+  "id": "reference/type-aliases/ServerEnv",
+  "title": "ServerEnv",
+  "description": "@teamhunt/shared",
+  "source": "@site/../docs/reference/type-aliases/ServerEnv.md",
+  "sourceDirName": "reference/type-aliases",
+  "slug": "/reference/type-aliases/ServerEnv",
+  "permalink": "/reference/type-aliases/ServerEnv",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

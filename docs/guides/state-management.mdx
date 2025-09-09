@@ -1,0 +1,192 @@
+# State Management
+
+TeamHunt uses a combination of state management approaches optimized for different layers of the application.
+
+## Client-Side State Management
+
+### React State Patterns
+
+For local component state, we use standard React patterns:
+
+```tsx
+// Simple component state
+const [isLoading, setIsLoading] = useState(false);
+
+// Complex state with useReducer
+const [state, dispatch] = useReducer(gameReducer, initialGameState);
+```
+
+### Server State with React Query
+
+For server state management, we use TanStack Query (React Query):
+
+```tsx
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+
+// Fetching data
+const { data, isLoading, error } = useQuery({
+  queryKey: ['hunts', organizationId],
+  queryFn: () => fetchHunts(organizationId),
+});
+
+// Mutations
+const mutation = useMutation({
+  mutationFn: createHunt,
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ['hunts'] });
+  },
+});
+```
+
+### Global Client State
+
+For global client state that doesn't belong to the server, we use Zustand:
+
+```tsx
+import { create } from 'zustand';
+
+interface AppStore {
+  theme: 'light' | 'dark';
+  setTheme: (theme: 'light' | 'dark') => void;
+  user: User | null;
+  setUser: (user: User | null) => void;
+}
+
+const useAppStore = create<AppStore>((set) => ({
+  theme: 'light',
+  setTheme: (theme) => set({ theme }),
+  user: null,
+  setUser: (user) => set({ user }),
+}));
+```
+
+## Server-Side State Management
+
+### Database State with Supabase
+
+All persistent data is managed through Supabase:
+
+```tsx
+import { createClient } from '@supabase/supabase-js';
+import type { Database } from '@teamhunt/shared/types';
+
+const supabase = createClient<Database>(
+  process.env.SUPABASE_URL!,
+  process.env.SUPABASE_ANON_KEY!
+);
+
+// Queries
+const { data, error } = await supabase
+  .from('hunts')
+  .select('*')
+  .eq('organization_id', orgId);
+
+// Real-time subscriptions
+const subscription = supabase
+  .channel('hunt-updates')
+  .on('postgres_changes', 
+     { event: '*', schema: 'public', table: 'hunts' },
+     (payload) => {
+       // Handle real-time updates
+     }
+  )
+  .subscribe();
+```
+
+### API State Management
+
+Express.js services maintain stateless request/response patterns:
+
+```tsx
+// Express route with proper error handling
+app.get('/v1/hunts/:id', async (req, res) => {
+  try {
+    const { data, error } = await supabase
+      .from('hunts')
+      .select('*')
+      .eq('id', req.params.id)
+      .single();
+
+    if (error) throw error;
+    
+    res.json({ data });
+  } catch (error) {
+    res.status(500).json({ 
+      error: 'Internal server error',
+      message: error.message 
+    });
+  }
+});
+```
+
+## Data Flow Patterns
+
+### 1. Unidirectional Data Flow
+
+```
+User Action → API Call → Database → Cache Invalidation → UI Update
+```
+
+### 2. Real-time Updates
+
+```
+Database Change → Supabase Realtime → Client Subscription → State Update → UI Refresh
+```
+
+### 3. Optimistic Updates
+
+```
+User Action → Optimistic UI Update → API Call → Success/Rollback
+```
+
+## Best Practices
+
+### 1. Separate Concerns
+- Server state: React Query + Supabase
+- Client state: Zustand or React state
+- Form state: React Hook Form
+- URL state: Next.js router
+
+### 2. Error Handling
+- Use React Query's error boundaries
+- Implement proper fallback UI
+- Log errors for monitoring
+
+### 3. Performance
+- Use React Query's caching strategies
+- Implement proper loading states
+- Avoid unnecessary re-renders with proper dependencies
+
+### 4. Type Safety
+- Define database types with Supabase CLI
+- Use TypeScript for all state interfaces
+- Leverage React Query's type inference
+
+## Testing State Management
+
+```tsx
+// Testing React Query hooks
+import { renderHook, waitFor } from '@testing-library/react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const createWrapper = () => {
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: false } },
+  });
+  
+  return ({ children }) => (
+    <QueryClientProvider client={queryClient}>
+      {children}
+    </QueryClientProvider>
+  );
+};
+
+test('should fetch hunts', async () => {
+  const { result } = renderHook(() => useHunts(), {
+    wrapper: createWrapper(),
+  });
+
+  await waitFor(() => expect(result.current.isSuccess).toBe(true));
+  expect(result.current.data).toHaveLength(3);
+});
+```

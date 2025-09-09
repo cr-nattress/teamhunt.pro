@@ -1,0 +1,54 @@
+# Getting Started
+
+Welcome to TeamHunt! This guide will help you get up and running with the TeamHunt platform development environment.
+
+## Prerequisites
+
+- Node.js 18+ and pnpm
+- Git
+- A code editor (VS Code recommended)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/cr-nattress/teamhunt.pro.git
+cd teamhunt.pro
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+# Edit .env.local with your configuration
+```
+
+## Development
+
+Start all services in development mode:
+
+```bash
+# Start all services
+pnpm dev
+
+# Or start individual services
+pnpm dev:landing    # Landing page (localhost:3000)
+pnpm dev:organizer  # Organizer app (localhost:3001)
+pnpm dev:api        # API service (localhost:8888)
+pnpm dev:email      # Email service (localhost:8889)
+pnpm dev:media      # Media service (localhost:8890)
+```
+
+## Project Structure
+
+See the [Project Structure](./project-structure) guide for detailed information about the codebase organization.
+
+## Next Steps
+
+- Read the [Contributing Guide](./contributing)
+- Explore the [State Management](./state-management) patterns
+- Review [Security Guidelines](./security)

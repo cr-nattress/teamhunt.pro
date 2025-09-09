@@ -1,0 +1,23 @@
+{
+  "id": "guides/contributing",
+  "title": "Contributing Guide",
+  "description": "Thank you for your interest in contributing to TeamHunt! This guide outlines the process for contributing to the project.",
+  "source": "@site/../docs/guides/contributing.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/contributing",
+  "permalink": "/guides/contributing",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "previous": {
+    "title": "Project Structure",
+    "permalink": "/guides/project-structure"
+  },
+  "next": {
+    "title": "State Management",
+    "permalink": "/guides/state-management"
+  }
+}

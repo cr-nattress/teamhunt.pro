@@ -24,7 +24,9 @@
       "Bash(pnpm --filter @teamhunt/shared build)",
       "WebSearch",
       "Bash(netlify:*)",
-      "Bash(pnpm dev:*)"
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm api:build:*)",
+      "Bash(pnpm docs:build:*)"
     ],
     "deny": [],
     "ask": []

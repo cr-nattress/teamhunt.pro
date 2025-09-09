@@ -1,0 +1,23 @@
+{
+  "id": "guides/lessons-learned",
+  "title": "Lessons Learned",
+  "description": "This document collects long-term lessons distilled from complex bugs and features.",
+  "source": "@site/../docs/guides/lessons-learned.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/lessons-learned",
+  "permalink": "/guides/lessons-learned",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "guideSidebar",
+  "previous": {
+    "title": "Security Guidelines",
+    "permalink": "/guides/security"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/reference/"
+  }
+}

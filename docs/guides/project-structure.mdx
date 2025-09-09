@@ -1,0 +1,81 @@
+# Project Structure
+
+TeamHunt is organized as a pnpm monorepo with the following structure:
+
+## Root Structure
+
+```
+teamhunt-monorepo/
+├── apps/                 # Next.js applications
+│   ├── landing/         # Marketing landing page
+│   └── organizer/       # Event organizer dashboard
+├── services/            # Netlify Functions APIs
+│   ├── api/            # Core API service
+│   ├── email/          # Email service
+│   └── media/          # Media processing service
+├── packages/           # Shared packages
+│   ├── shared/         # Common types and utilities
+│   └── config/         # Shared configuration
+├── tests/              # End-to-end tests
+│   ├── e2e-ui/         # UI tests with Playwright
+│   └── e2e-api/        # API tests with Playwright
+├── docs/               # Documentation
+├── website/            # Docusaurus documentation site
+└── prompts/            # Setup prompts and guides
+```
+
+## Applications
+
+### Landing Page (`apps/landing`)
+- Next.js 14 with App Router
+- Marketing site and user onboarding
+- Deployed to Netlify
+- Port: 3000
+
+### Organizer Dashboard (`apps/organizer`) 
+- Next.js 14 with App Router
+- Event management interface
+- Deployed to Netlify
+- Port: 3001
+
+## Services
+
+All services are built with Express.js and deployed as Netlify Functions:
+
+### API Service (`services/api`)
+- Core business logic and data operations
+- Supabase database integration
+- Port: 8888
+
+### Email Service (`services/email`)
+- Email notifications and campaigns
+- Integrates with email providers
+- Port: 8889
+
+### Media Service (`services/media`)
+- File uploads and processing
+- Image optimization and storage
+- Port: 8890
+
+## Shared Packages
+
+### `@teamhunt/shared`
+- Common TypeScript types and interfaces
+- Utility functions
+- Environment configuration
+- Database schemas
+
+### `@teamhunt/config`
+- Build configuration
+- Shared tooling setup
+- TypeScript configuration
+
+## Testing
+
+- **E2E UI Tests**: Playwright tests for user interfaces
+- **E2E API Tests**: Playwright tests for service APIs
+- **Unit Tests**: Individual package testing
+
+## Development
+
+The monorepo uses pnpm workspaces for dependency management and task orchestration. All packages reference each other using workspace protocol (`workspace:*`).
