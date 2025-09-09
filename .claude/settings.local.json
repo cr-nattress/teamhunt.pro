@@ -26,7 +26,11 @@
       "Bash(netlify:*)",
       "Bash(pnpm dev:*)",
       "Bash(pnpm api:build:*)",
-      "Bash(pnpm docs:build:*)"
+      "Bash(pnpm docs:build:*)",
+      "Bash(pnpm audit:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm --filter @teamhunt/landing build)",
+      "Bash(pnpm --filter @teamhunt/organizer build)"
     ],
     "deny": [],
     "ask": []
