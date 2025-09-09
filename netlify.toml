@@ -1,6 +1,7 @@
 [build]
-  command = "pnpm --filter @teamhunt/landing build"
+  command = "pnpm install && pnpm --filter @teamhunt/landing build"
   publish = "apps/landing/.next"
+  base = "."
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
