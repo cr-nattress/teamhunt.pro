@@ -33,7 +33,11 @@
       "Bash(pnpm --filter @teamhunt/organizer build)",
       "Bash(pnpm run:*)",
       "Bash(pnpm add:*)",
-      "Bash(pnpm sb:dev:*)"
+      "Bash(pnpm sb:dev:*)",
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm typecheck:*)",
+      "Bash(pnpm sb:build:*)"
     ],
     "deny": [],
     "ask": []

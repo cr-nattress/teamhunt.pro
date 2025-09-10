@@ -28,7 +28,8 @@
     "sb:build": "storybook build",
     "api:build": "typedoc --options typedoc.json",
     "scripts:new:component": "node scripts/new-component.mjs",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.2.2",

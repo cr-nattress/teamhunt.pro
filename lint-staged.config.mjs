@@ -1,4 +1,10 @@
 export default {
-  '*.{ts,tsx,js,jsx}': ['prettier --write', 'eslint --fix'],
-  '*.{md,json}': ['prettier --write'],
+  // Format all supported file types with Prettier
+  '*.{ts,tsx,js,jsx,json,md,mdx,yml,yaml}': ['prettier --write'],
+  
+  // Lint and fix JavaScript/TypeScript files
+  '*.{ts,tsx,js,jsx}': ['eslint --fix'],
+  
+  // Type check TypeScript files (without fixing, just validation)
+  '*.{ts,tsx}': () => 'pnpm typecheck'
 };
