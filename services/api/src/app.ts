@@ -1,9 +1,25 @@
 import express from 'express';
+import cors from 'cors';
 import { supabase } from './lib/supabase';
 
 const app = express();
 
+// CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:3000', // Landing page
+    'http://localhost:3001', // Organizer app
+    'https://teamhunt.pro',
+    'https://app.teamhunt.pro',
+    // Netlify deploy preview origins (comment for later tightening)
+    /https:\/\/.*\.netlify\.app$/
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Health check endpoint

@@ -1,0 +1,207 @@
+openapi: 3.0.3
+info:
+  title: TeamHunt API
+  description: API for managing team hunt events and organizations
+  version: 1.0.0
+  contact:
+    name: TeamHunt Support
+    email: support@teamhunt.pro
+  license:
+    name: MIT
+
+servers:
+  - url: http://localhost:8888
+    description: Development server
+  - url: https://api.teamhunt.pro
+    description: Production server
+
+paths:
+  /v1/healthz:
+    get:
+      summary: Health check endpoint
+      description: Returns the health status of the API service
+      operationId: getHealth
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "healthy"
+                  service:
+                    type: string
+                    example: "api"
+                  timestamp:
+                    type: string
+                    format: date-time
+                    example: "2024-01-15T10:30:00.000Z"
+                required:
+                  - status
+                  - service
+                  - timestamp
+
+  /v1/events:
+    get:
+      summary: Get events
+      description: Retrieve a list of events
+      operationId: getEvents
+      tags:
+        - Events
+      responses:
+        '200':
+          description: List of events
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Event'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    post:
+      summary: Create a new event
+      description: Creates a new team hunt event
+      operationId: createEvent
+      tags:
+        - Events
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: "Winter Quest 2024"
+                description:
+                  type: string
+                  example: "A challenging winter scavenger hunt in Vail"
+                organizationId:
+                  type: string
+                  example: "org_123"
+              required:
+                - title
+                - organizationId
+      responses:
+        '201':
+          description: Event created successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/Event'
+                  - type: object
+                    properties:
+                      status:
+                        type: string
+                        example: "created"
+        '400':
+          description: Invalid request data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /v1/orgs:
+    get:
+      summary: Get organizations
+      description: Retrieve a list of organizations
+      operationId: getOrganizations
+      tags:
+        - Organizations
+      responses:
+        '200':
+          description: List of organizations
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Organization'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Event:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "event_123"
+        title:
+          type: string
+          example: "Winter Quest 2024"
+        description:
+          type: string
+          example: "A challenging winter scavenger hunt in Vail"
+        organization_id:
+          type: string
+          example: "org_123"
+        created_at:
+          type: string
+          format: date-time
+          example: "2024-01-15T10:30:00.000Z"
+      required:
+        - id
+        - title
+        - organization_id
+        - created_at
+
+    Organization:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "org_123"
+        name:
+          type: string
+          example: "Adventure Seekers"
+      required:
+        - id
+        - name
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          example: "Failed to process request"
+      required:
+        - error
+
+tags:
+  - name: Health
+    description: Health check endpoints
+  - name: Events
+    description: Event management endpoints
+  - name: Organizations
+    description: Organization management endpoints

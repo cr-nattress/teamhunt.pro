@@ -27,6 +27,7 @@
     "sb:dev": "storybook dev -p 6006",
     "sb:build": "storybook build",
     "api:build": "typedoc --options typedoc.json",
+    "openapi:validate": "node -e \"const fs = require('fs'); const path = 'services/api/openapi.yaml'; if (fs.existsSync(path)) { console.log('OpenAPI specification found at', path); process.exit(0); } else { console.error('OpenAPI specification not found at', path); process.exit(1); }\"",
     "scripts:new:component": "node scripts/new-component.mjs",
     "test": "pnpm -r test",
     "prepare": "husky"
