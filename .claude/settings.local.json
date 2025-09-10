@@ -31,7 +31,9 @@
       "Bash(pnpm build:*)",
       "Bash(pnpm --filter @teamhunt/landing build)",
       "Bash(pnpm --filter @teamhunt/organizer build)",
-      "Bash(pnpm run:*)"
+      "Bash(pnpm run:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm sb:dev:*)"
     ],
     "deny": [],
     "ask": []
