@@ -1,2 +1,2 @@
 // Export all components here
-// Example: export { Button } from './components/Button';
+export { Example, type ExampleProps } from './components/Example/Example';
