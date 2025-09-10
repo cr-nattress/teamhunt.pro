@@ -37,7 +37,8 @@
       "Bash(pnpm dlx:*)",
       "Bash(pnpm lint:*)",
       "Bash(pnpm typecheck:*)",
-      "Bash(pnpm sb:build:*)"
+      "Bash(pnpm sb:build:*)",
+      "Bash(git stash:*)"
     ],
     "deny": [],
     "ask": []
