@@ -8,7 +8,18 @@ const config: StorybookConfig = {
   ],
   addons: ["@storybook/addon-docs", "@storybook/test"],
   core: { builder: "@storybook/builder-vite" },
-  docs: { autodocs: true }
+  docs: { autodocs: true },
+  viteFinal: async (config) => {
+    config.define = {
+      ...config.define,
+      global: 'globalThis',
+      'process.env': 'import.meta.env',
+      'process.env.NODE_ENV': JSON.stringify('development'),
+      'process.browser': 'true',
+      'process.version': JSON.stringify('v18.0.0')
+    };
+    return config;
+  }
 };
 
 export default config;
