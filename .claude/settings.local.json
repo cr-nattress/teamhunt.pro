@@ -38,7 +38,14 @@
       "Bash(pnpm lint:*)",
       "Bash(pnpm typecheck:*)",
       "Bash(pnpm sb:build:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(corepack enable)",
+      "Bash(corepack prepare:*)",
+      "Bash(find:*)",
+      "Bash(pnpm store prune:*)",
+      "Bash(pnpm -w install)",
+      "Bash(pnpm -w install --force)",
+      "Bash(pnpm -w install --frozen-lockfile)"
     ],
     "deny": [],
     "ask": []
