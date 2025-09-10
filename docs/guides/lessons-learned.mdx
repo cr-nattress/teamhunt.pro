@@ -26,3 +26,15 @@ Entries here are **permanent** and serve as engineering memory.
 
 ## Entries
 <!-- Append new lessons below this line -->
+
+### [2025-09-10] Tailwind CSS v4 Architecture Change
+**Related:** EP-0004 / Landing Page Styling
+- **Context:** After server restart, landing page lost all styling due to missing Tailwind CSS configuration.
+- **Lesson Learned:** Tailwind CSS v4+ moved PostCSS plugin to separate `@tailwindcss/postcss` package. Cannot use `tailwindcss` directly as PostCSS plugin anymore. Requires both packages: `tailwindcss` (core) + `@tailwindcss/postcss` (PostCSS integration).
+- **Action:** Update all Next.js apps to use proper Tailwind CSS v4 configuration pattern and document in setup guides.
+
+### [2025-09-10] Next.js Asset 500 Errors from Port Conflicts  
+**Related:** Development Server Management
+- **Context:** Next.js development server returned 500 errors for static assets (CSS, JS) preventing app from loading properly.
+- **Lesson Learned:** When Next.js assets return 500 errors, check for port conflicts from multiple development server instances. Always clear .next cache and restart cleanly after resolving conflicts.
+- **Action:** Use `netstat -ano | findstr :<port>` to identify conflicting processes, kill with `cmd //c "taskkill /PID <pid> /F"`, clear cache with `rm -rf .next`, then restart server.
